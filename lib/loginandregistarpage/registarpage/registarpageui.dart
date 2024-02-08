@@ -1,14 +1,19 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_animations/loginandregistarpage/loginpage/companents/loginpagebody.dart';
 
-class Loginpage extends StatefulWidget {
-  const Loginpage({super.key, required this.title});
-  final String title;
+import 'package:flutter/material.dart';
+import 'package:flutter_animations/loginandregistarpage/registarpage/companents.dart/registerbody.dart';
+
+
+
+
+
+
+class Registerpage extends StatefulWidget {
+  const Registerpage({super.key});
   @override
-  State<Loginpage> createState() => _loginPageState();
+  State<Registerpage> createState() => _RegisterPageState();
 }
 
-class _loginPageState extends State<Loginpage>
+class _RegisterPageState extends State<Registerpage>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation sizeanimationpositive;
@@ -83,12 +88,15 @@ class _loginPageState extends State<Loginpage>
 
   @override
   Widget build(BuildContext context) {
-    return Loginbody(
+    return Registerbody(
         sizeanimationneq: sizeanimationneq,
         locanimationpos: locanimationpos,
         colors1: colors1,
         sizeanimationpositive: sizeanimationpositive);
   }
 }
+
+
+
 
 
